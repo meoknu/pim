@@ -146,6 +146,7 @@ pim-test:
 
 .PHONY: pim-dev
 pim-dev:
+	APP_ENV=dev $(MAKE) dependencies
 	APP_ENV=dev $(MAKE) up
 	APP_ENV=dev $(MAKE) cache
 	$(MAKE) assets
